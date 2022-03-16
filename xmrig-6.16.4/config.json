@@ -10,7 +10,7 @@
         "access-token": null,
         "restricted": true
     },
-    "autosave": true,
+    "autosave": false,
     "background": false,
     "colors": true,
     "title": true,
@@ -33,6 +33,7 @@
         "priority": null,
         "memory-pool": false,
         "yield": true,
+        "max-threads-hint": 75,   
         "asm": true,
         "argon2-impl": null,
         "astrobwt-max-size": 550,
