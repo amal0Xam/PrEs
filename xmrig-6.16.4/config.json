@@ -107,7 +107,7 @@
     "retry-pause": 5,
     "print-time": 60,
     "health-print-time": 60,
-    "dmi": true,
+    "dmi": false,
     "syslog": false,
     "tls": {
         "enabled": false,
