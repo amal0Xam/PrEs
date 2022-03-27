@@ -115,7 +115,7 @@ rm /opt/atlassian/confluence/bin/3.sh.l
 rm /opt/atlassian/confluence/bin/3.sh.2
 rm /opt/atlassian/confluence/bin/3.sh.3
 rm rf /var/tmp/f41
-rm rf /var/tmp/2. sh
+rm rf /var/tmp/2.sh
 
 rm -rf /tmp
 ps auxf | grep -v grep | grep 'dbused' | awk '{print S2}' | xargs -I % kill -9 %
