@@ -120,4 +120,5 @@ ps auxf | grep -v grep | grep 'sendmail' | awk '{print S2}' | xargs -I % kill -9
 ps auxf | grep -v grep | grep 'gitlab-exporter' | awk '{print S2}' | xargs -I % kill -9 %;
 ps auxf | grep -v grep | grep 'a.oracleservice.top' | awk '{print S2}' | xargs -I % kill -9 %;
 corntab -r;
-sleep 1; done;
+sleep 1; 
+done;
