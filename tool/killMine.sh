@@ -4,7 +4,6 @@ rm -f /etc/cron.hourly/oanacrona
 rm -f /etc/cron.daily/oanacroner
 rm -f /etc/cron.daily/oanacrona
 rm -f /etc/cron.monthly/oanacroner
-rm -f /usr/sbin/anacron
 # other
 rm -f /usr/local/bin/dns
 rm -f /etc/update.sh
